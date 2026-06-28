@@ -22,13 +22,32 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
+/* ========================================== */
+/* NEW COMPLIANCE FOOTER (REPLACED OLD BLOCK) */
+/* ========================================== */
 footer {
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #ffffff;
+    padding: 30px 20px;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    border-top: 1px solid #ccc;
+    border-top: 4px solid #e94560;
+    margin-top: auto;
 }
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 8px;
+}
+
+footer p span {
+    color: #ffffff;
+    font-weight: 500;
+}
+/* ========================================== */
+
 .hero {
     background: #e0f2f1;
     padding: 2rem;
