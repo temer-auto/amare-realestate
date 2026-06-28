@@ -3,35 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Amare</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Footer - Amare Getachew Haile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 4px solid #e94560;
+        }
+
+        .footer-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-name {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #e94560;
+            text-transform: uppercase;
+        }
+
+        .footer-divider {
+            width: 80px;
+            height: 2px;
+            background-color: #e94560;
+            margin: 0 auto 15px auto;
+        }
+
+        .footer-details {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #d1d1d1;
+        }
+
+        .footer-details span {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888888;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .footer-name {
+                font-size: 18px;
+            }
+            .footer-details {
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Contact Me</h1>
-        <p>Ready to find your next property? Reach out via phone, email, or visit my office.</p>
-        <div class="contact-details">
-            <p><strong>Phone:</strong> +251 937 103600</p>
-            <p><strong>Email:</strong> <a href="mailto:info@amaregetachew.com">info@amaregetachew.com</a></p>
-            <p><strong>Office:</strong> Kirkos Woreda 08, Addis Ababa, Ethiopia</p>
+
+    <!-- ============================================ -->
+    <!-- FOOTER - Amare Getachew Haile               -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Name -->
+            <div class="footer-name">Amare Getachew Haile</div>
+            <div class="footer-divider"></div>
+
+            <!-- Details -->
+            <div class="footer-details">
+                <p>
+                    <span>TIN:</span> 0051845324
+                </p>
+                <p>
+                    <span>Kirkos Sub-city</span>, Woreda: 08, Kebele: 17/18, <span>House No:</span> 005
+                </p>
+                <p>
+                    Addis Ababa, Ethiopia
+                </p>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="footer-bottom">
+                &copy; 2026 Amare Getachew Haile. All rights reserved.
+            </div>
+
         </div>
-        <p>Or fill out the form below and I’ll respond within 24 hours.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2025 Amare Getachew. All rights reserved. | Kirkos Woreda 08, Addis Ababa | +251 937 103600</p>
     </footer>
+    <!-- ============================================ -->
+
 </body>
 </html>
