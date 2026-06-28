@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer - Amare Getachew Haile</title>
+    <title>Contact - Amare Getachew Haile</title>
     <style>
         * {
             margin: 0;
@@ -16,10 +16,73 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: space-between;
             background-color: #f8f9fa;
         }
 
+        /* Styled Contact Box Content Wrapper */
+        .contact-main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-bottom: 4px solid #e94560;
+        }
+
+        .contact-card h1 {
+            font-size: 26px;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .contact-card h2 {
+            font-size: 16px;
+            color: #e94560;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .contact-method {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #4e4e4e;
+            line-height: 1.6;
+        }
+
+        .contact-method strong {
+            color: #1a1a2e;
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-method a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
         .footer {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #ffffff;
@@ -67,8 +130,14 @@
             letter-spacing: 0.5px;
         }
 
-        /* Responsive */
+        /* Responsive UI adjustments */
         @media (max-width: 480px) {
+            .contact-card {
+                padding: 25px;
+            }
+            .contact-card h1 {
+                font-size: 22px;
+            }
             .footer-name {
                 font-size: 18px;
             }
@@ -79,6 +148,31 @@
     </style>
 </head>
 <body>
+
+    <!-- ============================================ -->
+    <!-- MAIN CONTACT SECTION                        -->
+    <!-- ============================================ -->
+    <main class="contact-main">
+        <div class="contact-card">
+            <h1>Get In Touch</h1>
+            <h2>Real Estate Investment Advisor</h2>
+            
+            <div class="contact-method">
+                <strong>Phone Channel</strong>
+                +251 937 103600
+            </div>
+
+            <div class="contact-method">
+                <strong>Email Address</strong>
+                <a href="mailto:info@amaregetachew.com">info@amaregetachew.com</a>
+            </div>
+
+            <div class="contact-method">
+                <strong>Registered Enterprise Location</strong>
+                Addis Ababa, Kirkos Sub-city, Woreda 08, Kebele 17/18, House No 005, Ethiopia
+            </div>
+        </div>
+    </main>
 
     <!-- ============================================ -->
     <!-- FOOTER - Amare Getachew Haile               -->
@@ -96,10 +190,7 @@
                     <span>TIN:</span> 0051845324
                 </p>
                 <p>
-                    <span>Kirkos Sub-city</span>, Woreda: 08, Kebele: 17/18, <span>House No:</span> 005
-                </p>
-                <p>
-                    Addis Ababa, Ethiopia
+                    Addis Ababa, Kirkos Sub-city, Woreda 08, Kebele 17/18, House No 005, Ethiopia
                 </p>
             </div>
 
